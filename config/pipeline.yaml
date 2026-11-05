@@ -1,0 +1,8 @@
+sources:
+  - {name: olx, adapter: mock_api, base_url: "http://localhost:8000/olx/api/v1"}
+  - {name: otodom, adapter: mock_api, base_url: "http://localhost:8000/otodom/api/v1"}
+raw_dir: data/raw
+volume_path: /Volumes/house_prices/raw/landing
+analysis_scope:
+  - teryt: "1465"   # Warszawa
+delisting_missed_full_crawls: 3

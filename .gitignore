@@ -1,0 +1,26 @@
+# Generated data: anchored to the repo root so that test fixtures or packages
+# with the same folder name elsewhere are still tracked.
+/data/
+/truth/
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+dist/
+build/
+
+# Tool caches
+.pytest_cache/
+.ruff_cache/
+
+# Secrets (see CLAUDE.md: environment variables only)
+.env
+.env.*
+
+# OS and editors
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/

@@ -1,0 +1,7 @@
+seed: 42
+world_start: 2025-11-01
+backfill_days: 30
+properties: 20000
+geography: {scope: PL, locations_file: reference/locations_pl.csv, weight_by: population}
+api: {port: 8000, rate_limit_per_minute: 300, error_rate: 0.01}
+truth_dir: truth/

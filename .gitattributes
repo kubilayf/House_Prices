@@ -1,0 +1,9 @@
+# Normalise every text file to LF, on all platforms and regardless of core.autocrlf.
+* text=auto eol=lf
+
+# Never touch line endings in binary files.
+*.gz      binary
+*.parquet binary
+*.png     binary
+*.jpg     binary
+*.xlsx    binary
