@@ -14,7 +14,7 @@ provider by changing **only the adapter, one parser and config**.
 
 ## Hard rules
 
-- **Bronze is append-only and raw.** Never clean, rename or type data in adapters. Parsing happens in silver.
+- **Bronze is append-only and raw.** Never clean, rename or type the payload in adapters; the only exception is stripping tracking parameters from `source_url`. Parsing happens in silver.
 - **Never read `truth/` from pipeline code.** It is ground truth for tests only.
 - **No secrets in code, config or chat.** Use environment variables / GitHub Secrets:
   `DATABRICKS_HOST`, `DATABRICKS_TOKEN`, `MOCK_API_KEY`.

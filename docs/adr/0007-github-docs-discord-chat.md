@@ -24,4 +24,4 @@ Option 1. Anything people need to find later lives in GitHub, and Discord is for
 - Late joiners have a searchable history that doesn't depend on chat.
 - Docs changes go through PRs, which adds some friction.
 - A decision reached in Discord doesn't count until it is recorded in GitHub. Hard-to-reverse decisions need an ADR.
-- **Open:** the Data Lab design doc puts ADRs in a shared `handbook` repository and direction debates in GitHub Discussions, while this repo keeps ADRs in `docs/adr/`. The team should agree where project-level ADRs live.
+- ADRs about this project live in `docs/adr/` in this repo. Decisions that affect the whole Data Lab go in the shared `handbook` repository once it exists (decided 2026-11-05).

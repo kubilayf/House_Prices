@@ -26,4 +26,4 @@ Option 1. Each record is one JSON line in the envelope from spec §3.1, and each
 - Duplicates are allowed in bronze and must be removed downstream.
 - Raw payloads may contain personal data, which silver has to drop or hash.
 - Breaking changes require a `schema_version` bump and a spec update in the same PR.
-- **Open:** `source_url` has tracking parameters removed, while adapters must do "no cleaning". The envelope should state that this rule applies to `payload` only, or the URL should stay raw.
+- The "no cleaning" rule applies to `payload`, which is stored exactly as received. `source_url` is envelope metadata, so adapters remove its tracking parameters (decided 2026-11-05).

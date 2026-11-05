@@ -70,7 +70,7 @@ Same layout under the Volume. `ingest_date` = the simulated/business date (`as_o
 ### 3.4 Adapter rules
 
 1. Append-only; never overwrite or delete in `raw/`.
-2. No cleaning in adapters.
+2. No cleaning in adapters: `payload` is stored exactly as received. The only exception is envelope metadata: `source_url` has tracking parameters removed (§3.1).
 3. Duplicates allowed; removed downstream.
 4. Removed listing re-checked ⇒ envelope with `fetch_status = gone`, null payload.
 5. Re-running a day ⇒ new `crawl_id`.
